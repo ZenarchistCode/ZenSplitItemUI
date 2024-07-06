@@ -1,0 +1,2 @@
+const int MENU_ZEN_SPLITGUI		= -69110493;
+const int ZEN_SPLIT_ITEM		= -71237;
