@@ -59,15 +59,22 @@ class ZenSplitItemUI extends ZenSplitItemUIBase
 		return m_ItemToSplit.GetQuantity();
 	}
 
+	override bool OnMouseWheel(Widget w, int x, int y, int wheel)
+	{
+		m_SplitQuantity += wheel;
+		UpdateQuantity(m_SplitQuantity);
+		return true;
+	}
+
 	void UpdateQuantity(int quantity)
 	{
 		m_SplitQuantity = Math.Clamp(quantity, 0, GetItemQuantity() - 1);
 		m_QuantitySlider.SetCurrent(m_SplitQuantity);
 
-		// This lil bit makes it possible to backspace to empty to enter a first number higher than 1.
+		// This lil bit makes it possible to backspace to empty to enter a first number higher than 0.
 		string txt = "";
 		if (m_SplitQuantity > 0)
-			txt =m_SplitQuantity.ToString();
+			txt = m_SplitQuantity.ToString();
 
 		m_SplitText.SetText("#STR_split0: " + txt + "/" + GetItemQuantity().ToString());
 		m_QuantityEditBox.SetText(txt);

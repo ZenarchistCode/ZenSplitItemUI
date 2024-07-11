@@ -10,6 +10,10 @@ Install this mod like any other mod - copy it into your server folder and add it
 
 This mod must be installed on both server and client.
 
+Credit:
+
+Credit to SpaceCat for the idea!
+
 Repack & Source Code:
 
 You can repack this mod if you like, and do anything else you want with it for that matter. The source code is on my GitHub at www.zenarchist.io
