@@ -1,4 +1,4 @@
-What Is This?
+What Is This? 
 
 This mod adds the ability to split items by a specific amount by holding down left CTRL + right clicking.
 
